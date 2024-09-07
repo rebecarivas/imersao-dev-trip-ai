@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, san sans-serif;
+}
+:root {
+  --black: #2a2a2a;
+  --roxo: #6f42d3;
+  --roxoEscuro: #3e2197;
+  --cinza: #e8e8e8;
+  --lilas: #cfbef4;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+header {
+  padding: 20px 0;
+  background-color: var(--roxo);
+}
+.logo {
+  width: 200px;
+}
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: var(--lilas);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+select {
+  padding: 5px 5px;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--roxo);
+  color: var(--lilas);
+}
+.divisao {
+  width: 2px;
+  background-color: var(--roxoEscuro);
+  margin: 0 10px;
+}
+form label {
+  margin-right: 10px;
+  font-size: 1rem;
+  background-color: var(--roxoEscuro);
+  border-radius: 50px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+form label img {
+  width: 16px;
+  margin-right: 10px;
+}
+.check {
+  display: none;
+}
+
+form button {
+  background-color: white;
+  border-radius: 50px;
+  color: var(roxo);
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+form button img {
+  width: 12px;
+}
+/* #select {
+  text-align: center;
+  padding: 30px 0;
+} */
+button {
+  cursor: pointer;
+}
+#resultados {
+  padding-bottom: 30px;
+}
+.titulo {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.titulo-cidade-container {
+  display: flex;
+  align-items: center;
+}
+.titulo-imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* margin-left: 10px; */
+}
+
+.titulo-cidade {
+  position: absolute; /* Posiciona o texto sobre a imagem */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o texto */
+  color: white; /* Define a cor do texto */
+  font-size: 3rem;
+  text-align: center;
+}
+.descricao {
+  text-align: center;
+  padding: 30px 0;
+  max-width: 700px;
+}
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conteudo h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.caixa {
+  background-color: var(--cinza);
+  padding: 20px;
+  width: 700px;
+  display: flex;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.caixa-img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.filtros img {
+  width: 20px;
+  margin-bottom: 10px;
+}
+.principal {
+  display: flex;
+  flex-direction: column;
+}
+.principal a {
+  text-decoration: underline;
+  color: var(--black);
+}
+.principal h4 {
+  margin-bottom: 10px;
+}
+.principal a:visited {
+  color: var(--black);
+}
+.principal a:hover {
+  color: var(--roxoEscuro);
+}
+.estrela {
+  width: 30px;
+}
+.esquerda {
+  display: flex;
+  gap: 30px;
+}
+.preco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+.p2 {
+  color: var(--roxoEscuro);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.preco a {
+  text-decoration: none;
+  background-color: var(--cinza);
+  border: 2px solid var(--lilas);
+  border-radius: 50px;
+  padding: 5px 15px;
+  color: var(--roxo);
+}
+.preco a:visited {
+  color: var(--roxo);
+}
+.preco a:hover {
+  text-decoration: none;
+  background-color: var(--lilas);
+  border: 2px solid var(--lilas);
+  border-radius: 50px;
+  padding: 5px 15px;
+  color: var(--roxoEscuro);
+}
+.mail {
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  font-size: 1rem;
+  background-color: var(--black);
+  color: white;
+  padding: 30px 0;
+}
+.footer-p2 {
+  margin-top: 20px;
+}
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+footer a:visited {
+  color: white;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.meia-lua {
+  border-radius: 0 0 50% 50%;
+  height: 450px;
+  margin-bottom: 100px;
+}
+.topo-first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-first {
+  width: 500px;
+}
+.form-first {
+  background-color: var(--cinza);
+  padding: 30px 30px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 80px;
+}
+.form-first select {
+  background-color: var(--cinza);
+  color: var(--roxoEscuro);
+  font-size: 1.1rem;
+}
+.form-first form {
+  border: 2px solid var(--roxo);
+  padding: 15px 20px;
+}
+.form-first label {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+}
+.form-first button {
+  background-color: var(--roxoEscuro);
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  padding: 10px 15px;
+}
+.form-first button img {
+  width: 24px;
+}
+#home {
+  background-image: url(public/praia.avif);
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  /* margin-bottom: -10%; */
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.texto {
+  position: absolute; /* Posiciona o texto sobre a imagem */
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+  font-family: "SUSE";
+}
+.texto h1 {
+  font-size: 3rem;
+}
+.texto p {
+  font-size: 1.5rem;
+}

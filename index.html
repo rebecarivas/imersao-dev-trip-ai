@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Trip.AI</title>
+</head>
+
+<body>
+
+    <header id="header-pesquisa">
+        <div class="container topo">
+            <img class="logo" src="public/logo.png" alt="logo do trip.ai" />
+            <div class="form-pesquisa">
+                <form>
+                    <select id="cidade">
+                        <option value="">Selecione uma capital</option>
+                        <option value="Fortaleza">Fortaleza</option>
+                        <option value="Recife">Recife</option>
+                    </select>
+                    <div class="divisao"></div>
+                    <label id="check-label-pet">
+                        <input class="check" id="check-pet" type="checkbox" name="pet">
+                        <img id="pet" src="public/pet.png" alt="viajar com pet" />
+                        com pet
+                    </label>
+                    <label id="check-label-kid">
+                        <input class="check" id="check-kid" type="checkbox" name="crianca">
+                        <img id="kid" src="public/kid.png" alt="viajar com criança">com criança</label>
+                    <label id="check-label-rodas">
+                        <input class="check" id="check-rodas" type="checkbox" name="deficiencia">
+                        <img id="rodas" src="public/rodas.png" alt="acessibilidade" />com acessibilidade</label>
+
+                    <button type="submit"><img src="public/lupa.png" alt="lupa" />Buscar</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section id="home">
+            <!-- <img src="public/praia.avif" alt="praia" /> -->
+            <div class="texto">
+                <h1>E aí, bora viajar?</h1>
+                <p>Escolha seu destino e suas necessidades.</p>
+                <p>Ganhe tempo para curtir do seu jeito.</p>
+            </div>
+        </section>
+        <section id="resultados" class="hide"></section>
+    </main>
+    <footer>
+        <p>2024 - Trip.AI. Todos os direitos reservados</p>
+        <p class="footer-p2">Desenvolvido por <a class="mail" href="mailto:rebecarivas@gmail.com" target="_blank" aria-label="Email da desenvolvedora web Rebeca Rivas">Rebeca Rivas</a></p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
